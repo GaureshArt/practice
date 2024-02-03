@@ -1,0 +1,35 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+.nav{
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+}
+.nav a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: aqua;
+}
+p{
+
+    width: 80%;
+    position:relative;
+    top: 30px;
+    margin-left: 50px;
+}
+
+.aside{
+    color: red;
+}
+aside{
+    background-color: bisque;
+    float: right;
+    padding-top: 30px;
+    height: 200px;
+    width: 300px;
+    
+}

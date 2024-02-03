@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Radio Buttons | CodingNepal</title>
+    <link rel="stylesheet" href="sub3.css">
+</head>
+<body>
+<form>
+
+  <div class="wrapper">
+    <div class="title">Choose your Subject</div>
+    <div class="box">
+      <input type="radio" name="select" id="option-1"  value="maths-3" onclick="maths_3()">
+      <input type="radio" name="select" id="option-2" value="ds" onclick="ds()">
+      <input type="radio" name="select" id="option-3"  value="dlcoa" onclick="dlcoa()">
+      <input type="radio" name="select" id="option-4" value="dsgt" onclick="dsgt()">
+      <input type="radio" name="select" id="option-5" value="oopm" onclick="oopm()">
+      <input type="radio" name="select" id="option-6" value="cg" onclick="cg()">
+      <label for="option-1" class="option-1">
+        <div class="dot"></div>
+        <div class="text">MATHS-3</div>
+      </label>
+      <label for="option-2" class="option-2">
+        <div class="dot"></div>
+        <div class="text">DS</div>
+      </label>
+      <label for="option-3" class="option-3">
+        <div class="dot"></div>
+        <div class="text">DLCOA</div>
+      </label>
+      <label for="option-4" class="option-4">
+        <div class="dot"></div>
+        <div class="text">DSGT</div>
+      </label>
+      <label for="option-5" class="option-5">
+        <div class="dot"></div>
+        <div class="text">OOPM</div>
+      </label>
+      <label for="option-6" class="option-6">
+        <div class="dot"></div>
+        <div class="text">CG</div>
+      </label>
+      <input type="submit" class="button" value="NEXT" style="position: relative; left: 90px; border-radius: 17px; width: 100px; height: 30px;">
+    </div>
+  </div>
+  </form>
+  
+  <script>
+    let subje = document.querySelectorAll("[name='select']");
+    let form = document.querySelector("form");
+    let i=null;
+    form.addEventListener("submit", sec_sub);
+    function sec_sub(event) {
+      event.preventDefault();
+      while(i<subje.length)
+      {
+        if(subje[i].value == "maths-3")
+        {
+          event.preventDefault();
+          location.href = "maths-3.html";
+          break;
+        }
+        else if(subje[i].value == "cg")
+        {
+            event.preventDefault();
+            location.href = "loginpage.html";
+            break;
+          }
+          else if(subje[i].value == "sem3")
+          {
+            event.preventDefault();
+            location.href = "sub3.html";
+            break;
+          }
+          else{
+            location.href = "sub4.html";
+            break;
+        }
+        
+      }
+    
+      }
+      function ds()
+      {
+        i =1;
+      }
+      function maths_3()
+      {
+        i =0;
+      }
+      function dsgt()
+      {
+        i =3;
+      }
+      function oopm()
+      {
+        i =4;
+      }
+      function dlcoa()
+      {
+        i =2;
+      }
+      
+      function cg()
+      {
+        i =5;
+      }
+  
+  </script>
+  </html>
+</body>
